@@ -6,21 +6,30 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "db": "npx prisma migrate dev",
+    "studio": "npx prisma studio",
+    "docker-up": "docker compose up -d",
+    "docker-stop": "docker compose stop",
+    "docker-down": "docker compose down"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@rocketseat/eslint-config": "2.1.0",
+    "@types/bcryptjs": "2.4.5",
     "@types/node": "20.8.9",
     "eslint": "8.52.0",
+    "prisma": "5.5.2",
     "ts-node": "10.9.1",
     "tsup": "7.2.0",
     "tsx": "3.14.0",
     "typescript": "5.2.2"
   },
   "dependencies": {
+    "@prisma/client": "5.5.2",
+    "bcryptjs": "2.4.3",
     "dotenv": "16.3.1",
     "fastify": "4.24.3",
     "zod": "3.22.4"

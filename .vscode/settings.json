@@ -1,0 +1,11 @@
+{
+    "launch": {
+        "javascript.suggest.alwaysAllWords": true,
+
+    // Complete functions with their parameter signature.
+    "javascript.suggest.useCodeSnippetsOnMethodSuggest": true,
+        "configurations": [],
+        "compounds": []
+    },
+    "typescript.tsdk": "node_modules\\typescript\\lib"
+}
